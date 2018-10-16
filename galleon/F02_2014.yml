@@ -1,0 +1,12 @@
+mapping:
+  date: {src: COMPLEMENTARY_INFO.DATE_DISPATCH_NOTICE}
+  language: {src: __tag__LG}
+  tender:
+    mapping:
+      description: {src: OBJECT_CONTRACT.SHORT_DESCR.P}
+      id: {src: OBJECT_CONTRACT.REFERENCE_NUMBER}
+      title: {src: OBJECT_CONTRACT.TITLE.P}
+      value:
+        mapping:
+          amount: {src: OBJECT_CONTRACT.VAL_ESTIMATED_TOTAL.value}
+          currency: {src: OBJECT_CONTRACT.VAL_ESTIMATED_TOTAL.__tag__CURRENCY}
