@@ -201,3 +201,17 @@ Other work from 2015 includes [ocds-ted](https://github.com/timgdavies/ocds-ted)
     git clone git@github.com:timgdavies/ocds-ted.git
     jekyll serve
     open http://127.0.0.1:4000/ocds-ted/docs/
+
+## Experimental ocds transformations
+    1. Create virtualenv
+    pyenv virtualenv 3 eu-support
+    pyenv activate eu-support
+    
+    2. Install requirements.txt
+    pip install -r requirements.txt
+
+    3. Convert available mappings
+    python convert.py
+
+    4. See results
+    cat output/ocds/F02_2014.json | jq
